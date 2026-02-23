@@ -1,0 +1,30 @@
+# This file was created Mon Feb 23 15:31:59 2026
+# Created by:
+#               :-) GROMACS - gmx energy, 2020.7-plumed-2.9.2 (-:
+# 
+# Executable:   /home/iua28435/SOFTWARE/GROMACS_PLUMED/gromacs-2020.7/bin/gmx
+# Data prefix:  /home/iua28435/SOFTWARE/GROMACS_PLUMED/gromacs-2020.7
+# Working dir:  /home/iua28435/MEMMI/test/MEMMI_replicating_results/2026_02_23
+# Command line:
+#   gmx energy -f em.edr -o all_energies.xvg
+# gmx energy is part of G R O M A C S:
+#
+# GRowing Old MAkes el Chrono Sweat
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Bond"
+@ s1 legend "LJ-14"
+@ s2 legend "Coulomb-14"
+@ s3 legend "Potential"
+    0.000000  49319924.000000  2139354214432768.000000  91501.062500  2268641185759232.000000
+    0.000000  49320000.000000  10501908070400.000000  90243.953125  103372245958656.000000
+   59.000000  42929512.000000  68007.726562  86867.531250  46084960.000000
