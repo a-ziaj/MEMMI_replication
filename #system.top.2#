@@ -1,0 +1,92 @@
+;
+;	File 'system.top' was generated
+;	By user: unknown (1231606)
+;	On host: rfi-ai-prod-ws-ostack-phdtraining-01
+;	At date: Tue Feb 24 14:05:16 2026
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	              :-) GROMACS - gmx pdb2gmx, 2020.7-plumed-2.9.2 (-:
+;	
+;	Executable:   /home/iua28435/SOFTWARE/GROMACS_PLUMED/gromacs-2020.7/bin/gmx
+;	Data prefix:  /home/iua28435/SOFTWARE/GROMACS_PLUMED/gromacs-2020.7
+;	Working dir:  /home/iua28435/MEMMI/test/MEMMI_replicating_results/2026_02_23
+;	Command line:
+;	  gmx pdb2gmx -f complex_noh.pdb -o system.pdb -p system.top
+;	Force field was read from the standard GROMACS share directory.
+;
+
+; Include forcefield parameters
+#include "amber99sb-ildn.ff/forcefield.itp"
+
+; Include chain topologies
+#include "system_Protein_chain_A.itp"
+#include "system_Protein_chain_B.itp"
+#include "system_Protein_chain_C.itp"
+#include "system_Protein_chain_D.itp"
+#include "system_Protein_chain_E.itp"
+#include "system_Protein_chain_F.itp"
+#include "system_Protein_chain_G.itp"
+#include "system_Protein_chain_H.itp"
+#include "system_Protein_chain_I.itp"
+#include "system_Protein_chain_J.itp"
+#include "system_Protein_chain_K.itp"
+#include "system_Protein_chain_L.itp"
+#include "system_Protein_chain_M.itp"
+#include "system_Protein_chain_N.itp"
+#include "system_Protein_chain_O.itp"
+#include "system_Protein_chain_P.itp"
+#include "system_Protein_chain_Q.itp"
+#include "system_Protein_chain_R.itp"
+#include "system_Protein_chain_S.itp"
+#include "system_Protein_chain_T.itp"
+#include "system_Protein_chain_U.itp"
+#include "system_Protein_chain_V.itp"
+#include "system_Protein_chain_W.itp"
+#include "system_Protein_chain_X.itp"
+
+; Include water topology
+#include "amber99sb-ildn.ff/tip3p.itp"
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+; Include topology for ions
+#include "amber99sb-ildn.ff/ions.itp"
+
+[ system ]
+; Name
+Protein in water
+
+[ molecules ]
+; Compound        #mols
+Protein_chain_A     1
+Protein_chain_B     1
+Protein_chain_C     1
+Protein_chain_D     1
+Protein_chain_E     1
+Protein_chain_F     1
+Protein_chain_G     1
+Protein_chain_H     1
+Protein_chain_I     1
+Protein_chain_J     1
+Protein_chain_K     1
+Protein_chain_L     1
+Protein_chain_M     1
+Protein_chain_N     1
+Protein_chain_O     1
+Protein_chain_P     1
+Protein_chain_Q     1
+Protein_chain_R     1
+Protein_chain_S     1
+Protein_chain_T     1
+Protein_chain_U     1
+Protein_chain_V     1
+Protein_chain_W     1
+Protein_chain_X     1
+SOL             22419

@@ -1,0 +1,27 @@
+# This file was created Tue Feb 24 15:19:50 2026
+# Created by:
+#               :-) GROMACS - gmx energy, 2020.7-plumed-2.9.2 (-:
+# 
+# Executable:   /home/iua28435/SOFTWARE/GROMACS_PLUMED/gromacs-2020.7/bin/gmx
+# Data prefix:  /home/iua28435/SOFTWARE/GROMACS_PLUMED/gromacs-2020.7
+# Working dir:  /home/iua28435/MEMMI/test/MEMMI_replicating_results/2026_02_23
+# Command line:
+#   gmx energy -f em_solv_ion_cg.edr -o potential_solv_ion_cg.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Good gRace! Old Maple Actually Chews Slate
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Potential"
+    0.000000  -1354076.000000
+    0.000000  -1354110.750000
+  941.000000  -1372309.875000
