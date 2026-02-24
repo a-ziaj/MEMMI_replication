@@ -61,7 +61,7 @@
 
 [ system ]
 ; Name
-Protein
+Protein in water
 
 [ molecules ]
 ; Compound        #mols
@@ -89,3 +89,5 @@ Protein_chain_U     1
 Protein_chain_V     1
 Protein_chain_W     1
 Protein_chain_X     1
+SOL         22347
+NA               72

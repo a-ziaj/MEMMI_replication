@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: unknown (1231606)
 ;	On host: rfi-ai-prod-ws-ostack-phdtraining-01
-;	At date: Tue Feb 24 14:06:46 2026
+;	At date: Tue Feb 24 15:08:20 2026
 ;
 ;	Created by:
 ;	              :-) GROMACS - gmx grompp, 2020.7-plumed-2.9.2 (-:
@@ -11,7 +11,7 @@
 ;	Data prefix:  /home/iua28435/SOFTWARE/GROMACS_PLUMED/gromacs-2020.7
 ;	Working dir:  /home/iua28435/MEMMI/test/MEMMI_replicating_results/2026_02_23
 ;	Command line:
-;	  gmx grompp -f em.mdp -c conf_box_oriented.gro -p system.top -o em.tpr -maxwarn 28
+;	  gmx grompp -f em.mdp -c em_solv_ion.gro -p system.top -o em_solv_ion_steep.tpr -maxwarn 28
 
 ; VARIOUS PREPROCESSING OPTIONS
 ; Preprocessor information: use cpp syntax.
@@ -21,7 +21,7 @@ include                  =
 define                   = 
 
 ; RUN CONTROL PARAMETERS
-integrator               = cg
+integrator               = steep
 ; Start time and timestep in ps
 tinit                    = 0
 dt                       = 0.001
